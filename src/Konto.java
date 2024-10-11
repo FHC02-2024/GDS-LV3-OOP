@@ -1,14 +1,29 @@
 public class Konto {
     private String inhaber;
+    private final int nummer;
     private double kontostand;
 
+    private static int anzahlKonto;
+
+    public Konto (String inhaber) {
+        this.inhaber = inhaber;
+        anzahlKonto++;
+        this.nummer = anzahlKonto;
+    }
+
+    public static int getAnzahlKonto(){
+        return anzahlKonto;
+    }
+
     public void print() {
+        System.out.println("nummer = " + nummer);
         System.out.println("inhaber = " + inhaber);
         System.out.println("kontostand = " + kontostand);
     }
 
     public void setInhaber(String inhaber) {
         this.inhaber = inhaber;
+        kontostand = 0;
     }
 
     public void aufbuchen(double wert) {
