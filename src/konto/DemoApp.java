@@ -1,13 +1,15 @@
+package konto;
+
 public class DemoApp {
 
     public static void main(String[] args) {
 
-        System.out.println("Konto.getAnzahlKonto() = " + Konto.getAnzahlKonto());
+        System.out.println("konto.Konto.getAnzahlKonto() = " + Konto.getAnzahlKonto());
         
         Konto k = new Konto("Susi Sorglos");
         //k.setInhaber();
 
-        System.out.println("Konto.getAnzahlKonto() = " + Konto.getAnzahlKonto());
+        System.out.println("konto.Konto.getAnzahlKonto() = " + Konto.getAnzahlKonto());
 
         k.abbuchen(1000);
         k.print();
@@ -24,7 +26,7 @@ public class DemoApp {
         k1.abbuchen(200);
         k1.print();
 
-        System.out.println("Konto.getAnzahlKonto() = " + Konto.getAnzahlKonto());
+        System.out.println("konto.Konto.getAnzahlKonto() = " + Konto.getAnzahlKonto());
         System.out.println("k.getAnzahlKonto() = " + k.getAnzahlKonto());
         System.out.println("k2.getAnzahlKonto() = " + k1.getAnzahlKonto());
     }

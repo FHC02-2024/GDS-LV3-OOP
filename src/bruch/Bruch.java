@@ -1,3 +1,5 @@
+package bruch;
+
 public class Bruch {
     private int nenner;
     private int zaehler;
@@ -21,6 +23,13 @@ public class Bruch {
         int neuZaehler = zaehler * b2.zaehler;
 
        return new Bruch(neuZaehler, neuNenner);
+    }
+
+    public Bruch multiplicate(Bruch b2, Bruch b3) {
+        //bruch.Bruch b = multiplicate(b2);
+        //return b.multiplicate(b3);
+
+        return multiplicate(b2).multiplicate(b3);
     }
 
     public int getNenner() {

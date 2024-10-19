@@ -1,3 +1,5 @@
+package konto;
+
 public class Konto {
     private String inhaber;
     private final int nummer;
@@ -32,7 +34,7 @@ public class Konto {
 
     public void abbuchen(double wert) {
         if (kontostand - wert < 0) {
-            System.out.println("Zu wenig Geld am Konto: " + kontostand);
+            System.out.println("Zu wenig Geld am konto.Konto: " + kontostand);
         }
         else {
             //kontostand = kontostand - wert;
